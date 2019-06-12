@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view41"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/view37"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/leavefrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leavesFromTextView"
+        android:layout_alignEnd="@+id/leavesFromTextView"
+        android:layout_alignLeft="@+id/leavesFromTextView"
+        android:layout_alignRight="@+id/leavesFromTextView"
+        android:layout_alignStart="@+id/leavesFromTextView"
+        android:layout_alignTop="@+id/leaveto"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:text="Leave From" />
+
+    <TextView
+        android:id="@+id/leaveto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/leavesToTextView"
+        android:layout_alignLeft="@+id/leavesToTextView"
+        android:layout_alignRight="@+id/leavesToTextView"
+        android:layout_alignStart="@+id/leavesToTextView"
+        android:layout_below="@+id/textView69"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:text="Leave To" />
+
+    <TextView
+        android:id="@+id/leavesFromTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leaveto"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_toLeftOf="@+id/view41"
+        android:layout_toStartOf="@+id/view41"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/leavesToTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leaveto"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/view41"
+        android:layout_toRightOf="@+id/view41"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/leavesCauseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leavesSubmitButton"
+        android:layout_alignEnd="@+id/leavesToTextView"
+        android:layout_alignLeft="@+id/leavesFromTextView"
+        android:layout_alignRight="@+id/leavesToTextView"
+        android:layout_alignStart="@+id/leavesFromTextView"
+        android:layout_below="@+id/leavesCount"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="start"
+        android:hint="Cause"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/leavesSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/leavesCauseEditText"
+        android:layout_alignLeft="@+id/leavesCauseEditText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/leavesCauseEditText"
+        android:layout_alignStart="@+id/leavesCauseEditText"
+        android:layout_marginBottom="51dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Apply"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/leavesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/leavesFromTextView"
+        android:layout_alignLeft="@+id/textView67"
+        android:layout_alignRight="@+id/leavesFromTextView"
+        android:layout_alignStart="@+id/textView67"
+        android:layout_below="@+id/textView67"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/leavesFromTextView"
+        android:layout_alignStart="@+id/leavesFromTextView"
+        android:layout_below="@+id/leavesFromTextView"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text=" No. of Day(s)" />
+
+    <TextView
+        android:id="@+id/studentNameTextView"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/leavesFromTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/leavesFromTextView"
+        android:layout_marginTop="15dp"
+        android:padding="2dp"
+        android:text="To,"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView69"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentNameTextView"
+        android:layout_toEndOf="@+id/studentNameTextView"
+        android:layout_toRightOf="@+id/studentNameTextView"
+        android:padding="2dp"
+        android:text="The Class Teacher"
+        android:textColor="#000000" />
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinnerTeacherName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:layout_alignEnd="@id/leaveto"-->
+    <!--android:layout_alignStart="@id/leavefrom"-->
+    <!--android:layout_below="@+id/studentNameTextView"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:background="@drawable/assign_filter_date_bg" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/spinnerTeacherName"-->
+    <!--android:layout_alignEnd="@+id/spinnerTeacherName"-->
+    <!--android:layout_alignTop="@+id/spinnerTeacherName"-->
+    <!--android:src="@drawable/picklist50" />-->
+
+
+</RelativeLayout>

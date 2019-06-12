@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorBg">#017DC5</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#b6b9bc</color>
+
+    <color name="colorCenterOrange">#F67B29</color>
+    <!--<color name="textColor">#616060</color>-->
+    <color name="dashBoardTextColor">#141414</color>
+    <color name="textColor">#7e7d7d</color>
+    <color name="textColorTitle">#aeadad</color>
+    <color name="textColorDark">#505050</color>
+    <color name="houseColor">#21be31</color>
+    <color name="green">#21be31</color>
+    <color name="blue">#267cdf</color>
+    <color name="red">#f72116</color>
+    <color name="transparentone">#CCFFFFFF</color>
+    <color name="yellow">#f7e840</color>
+    <color name="transparent">#00030303</color>
+    <color name="fontcolorfull">#D66D75</color>
+
+    <!--<color name="transparent">#e0e1e2</color>-->
+    <color name="feesDueDashboardColor">#4b4f51</color>
+    <color name="gallery_image_bg_color">#2677AC</color>
+    <color name="gallery_image_preview">#000000</color>
+    <color name="gallery_slider_background">#d7d7d7</color>
+    <color name="view_color">#E8E8E8</color>
+    <color name="colorNormalCheckBox">#FFF</color>
+    <color name="colorActivatedCheckBox">#FFF</color>
+    <color name="transparentBlack">#282514</color>
+
+
+    <color name="colorbluelight">#647DEE</color>
+    <color name="purplelight">#A88BEB</color>
+    <color name="blackandwhite">#2D3436</color>
+    <color name="lightgray">#D3D3D3</color>
+
+    <color name="colorPrimary">#d53369</color>
+    <color name="colorPrimaryDark">#d53369</color>
+    <color name="colorAccent">#CA6A5A</color>
+    <color name="colorLoginButton">#33B8BF</color>
+    <color name="splash_bg">#FFFF99</color>
+    <color name="urgentAlertColor">#f72116</color>
+    <color name="login_button">#1330e1</color>
+    <color name="greywhite">#F8F8FF</color>
+    <color name="fontcolor">#333333</color>
+    <color name="holiday">#F59BAD</color>
+
+
+
+
+</resources>

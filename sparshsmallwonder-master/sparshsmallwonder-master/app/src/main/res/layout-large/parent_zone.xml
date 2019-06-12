@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/parent_control_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorWhite"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorWhite"
+        app:tabTextColor="#ffffff" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/calendar_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/parent_control_tab_layout" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/parentPageAddFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_add_white_36dp"
+            app:backgroundTint="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/passcodelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:background="#e6e6e6">
+
+        <EditText
+            android:id="@+id/parentPasscodeEditText"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/enter_passcode_bg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="----"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:padding="5dp"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/textView70"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/parentPasscodeEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:text="Enter Parent Access Passcode"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/passcodeEnterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/parentPasscodeEditText"
+            android:layout_alignLeft="@+id/parentPasscodeEditText"
+            android:layout_alignRight="@+id/parentPasscodeEditText"
+            android:layout_alignStart="@+id/parentPasscodeEditText"
+            android:layout_below="@+id/parentPasscodeEditText"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:focusableInTouchMode="false"
+            android:text="Enter"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+</RelativeLayout>

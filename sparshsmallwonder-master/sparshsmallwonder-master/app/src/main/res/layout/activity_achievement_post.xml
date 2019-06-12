@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/mainAlertPostLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:id="@+id/viewVertical"
+            android:layout_width="15dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+
+        <EditText
+            android:id="@+id/achievementTitleEditText"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:ellipsize="end"
+            android:hint="Title"
+            android:maxLines="5"
+            android:minHeight="35dp"
+            android:padding="3dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/academic_year"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/achievementTitleEditText"
+            android:layout_alignStart="@+id/achievementTitleEditText"
+            android:layout_below="@+id/achievementTitleEditText"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="center_vertical"
+            android:hint="Academic Year"
+            android:text="2017-18"
+            android:textColor="@color/textColorDark"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/achievementStudentNameEditText"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/achievementTitleEditText"
+            android:layout_alignStart="@+id/achievementTitleEditText"
+            android:layout_below="@+id/academic_year"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="center_vertical"
+            android:hint="Student Name"
+            android:textColor="@color/textColorDark"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp" />
+
+        <Spinner
+            android:id="@+id/achievementCategorySpinner"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/achievementTitleEditText"
+            android:layout_alignStart="@+id/achievementTitleEditText"
+            android:layout_below="@+id/achievementStudentNameEditText"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/achievementCategorySpinner"
+            android:layout_alignEnd="@+id/achievementCategorySpinner"
+            android:layout_alignTop="@+id/achievementCategorySpinner"
+            android:src="@drawable/picklist50" />
+
+
+        <EditText
+            android:id="@+id/achievementDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/achievementTitleEditText"
+            android:layout_alignStart="@+id/achievementTitleEditText"
+            android:layout_below="@+id/achievementCategorySpinner"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="start"
+            android:hint="Add description here"
+            android:minHeight="100dp"
+            android:padding="5dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/achievementPost_attachment_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/achievementDescriptionEditText"
+            android:layout_alignStart="@+id/achievementDescriptionEditText"
+            android:layout_below="@+id/achievementDescriptionEditText"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/achievementRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="1dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

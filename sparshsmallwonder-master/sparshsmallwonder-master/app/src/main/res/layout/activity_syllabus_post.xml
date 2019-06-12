@@ -1,0 +1,114 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/mainAssPostLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewCenterVertical"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/spinnerSyllabusClass"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/viewCenterVertical"
+            android:layout_toStartOf="@+id/viewCenterVertical"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerSyllabusClass"
+            android:layout_alignEnd="@+id/spinnerSyllabusClass"
+            android:layout_alignTop="@+id/spinnerSyllabusClass"
+            android:src="@drawable/picklist50" />
+
+        <Spinner
+            android:id="@+id/spinnerSyllabusDivision"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/viewCenterVertical"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerSyllabusDivision"
+            android:layout_alignEnd="@+id/spinnerSyllabusDivision"
+            android:layout_alignTop="@+id/spinnerSyllabusDivision"
+            android:src="@drawable/picklist50" />
+
+
+        <Spinner
+            android:id="@+id/spinnerSyllabusSubject"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/spinnerSyllabusClass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerSyllabusSubject"
+            android:layout_alignEnd="@+id/spinnerSyllabusSubject"
+            android:layout_alignTop="@+id/spinnerSyllabusSubject"
+            android:src="@drawable/picklist50" />
+
+
+        <EditText
+            android:id="@+id/syllabusTextDescription"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerSyllabusDivision"
+            android:layout_alignStart="@+id/spinnerSyllabusClass"
+            android:layout_below="@+id/spinnerSyllabusSubject"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="start"
+            android:hint="Add Description here"
+            android:minHeight="100dp"
+            android:padding="5dp"
+            android:textColor="@color/textColorDark" />
+
+        <RelativeLayout
+            android:id="@+id/syllabusPost_attachment_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/syllabusTextDescription"
+            android:layout_alignStart="@+id/syllabusTextDescription"
+            android:layout_below="@+id/syllabusTextDescription"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/syllabusPostRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="1dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

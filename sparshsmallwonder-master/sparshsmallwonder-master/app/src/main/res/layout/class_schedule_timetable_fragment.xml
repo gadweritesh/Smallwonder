@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ListView
+        android:id="@+id/time_table_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time_table_listView"
+        android:layout_below="@+id/time_table_listView"
+        android:background="#000" />
+
+    <TextView
+        android:id="@+id/no_data_available_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/noDataAvailable"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

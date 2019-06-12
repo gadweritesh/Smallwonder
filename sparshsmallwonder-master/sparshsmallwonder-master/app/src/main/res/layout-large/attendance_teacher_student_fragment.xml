@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp">
+
+        <View
+            android:id="@+id/filterCenterView"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/attendanceClassSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/filterCenterView"
+            android:layout_toStartOf="@+id/filterCenterView"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/attendanceClassSpinner"
+            android:layout_alignEnd="@+id/attendanceClassSpinner"
+            android:layout_alignRight="@+id/attendanceClassSpinner"
+            android:layout_alignTop="@+id/attendanceClassSpinner"
+            android:src="@drawable/picklist50" />
+
+
+        <Spinner
+            android:id="@+id/attendanceDivisionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/filterCenterView"
+            android:layout_toRightOf="@+id/filterCenterView"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/attendanceDivisionSpinner"
+            android:layout_alignEnd="@+id/attendanceDivisionSpinner"
+            android:layout_alignRight="@+id/attendanceDivisionSpinner"
+            android:layout_alignTop="@+id/attendanceDivisionSpinner"
+            android:src="@drawable/picklist50" />
+
+
+        <Spinner
+            android:id="@+id/attendanceStudentNameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/attendanceStudentNameSpinner"
+            android:layout_alignEnd="@+id/attendanceStudentNameSpinner"
+            android:layout_alignRight="@+id/attendanceStudentNameSpinner"
+            android:layout_alignTop="@+id/attendanceStudentNameSpinner"
+            android:src="@drawable/picklist50" />
+
+
+        <Button
+            android:id="@+id/attendanceView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/blue_circle_bg"
+            android:gravity="center"
+            android:shadowColor="#7F000000"
+            android:shadowRadius="5"
+            android:text="View"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

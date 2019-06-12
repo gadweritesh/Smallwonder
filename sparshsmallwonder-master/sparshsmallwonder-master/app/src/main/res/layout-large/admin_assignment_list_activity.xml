@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/assignment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/assignmentStickView"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:background="@color/colorPrimary" />
+
+        <ListView
+            android:id="@+id/assignmentTabRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:padding="5dp"
+            android:scrollbars="none" />
+
+
+        <TextView
+            android:id="@+id/assignmentNoDataAvailable_textView"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold|italic" />
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/addAssignmentButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--android:src="@drawable/ic_add_white_36dp"-->
+        <!--app:backgroundTint="@color/colorPrimary" />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

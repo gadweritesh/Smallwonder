@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/assignment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/assignment_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            app:tabIndicatorColor="@color/colorWhite"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabTextAppearance="@android:style/TextAppearance.Medium"
+            app:tabTextColor="#ffffff" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/assignment_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/assignment_tab_layout" />
+
+        <View
+            android:id="@+id/assignmentStickView"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/assignmentNoDataAvailable_textView"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold|italic" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addAssignmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_add_white_36dp"
+            app:backgroundTint="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/assignment_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/cardview_light_background">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp">
+
+            <View
+                android:id="@+id/filterCenterView"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/startTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/filterCenterView"
+                android:layout_toStartOf="@+id/filterCenterView"
+                android:background="@drawable/assign_filter_date_bg"
+                android:gravity="center"
+                android:hint="Start Date "
+                android:padding="5dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/selectSubjectSpinner"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/endTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@+id/filterCenterView"
+                android:layout_toRightOf="@+id/filterCenterView"
+                android:background="@drawable/assign_filter_date_bg"
+                android:gravity="center"
+                android:hint="End Date"
+                android:padding="5dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/filterClassSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/startTextView"
+                android:layout_marginTop="35dp"
+                android:layout_toLeftOf="@+id/filterCenterView"
+                android:layout_toStartOf="@+id/filterCenterView"
+                android:background="@drawable/assign_filter_date_bg"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/classSpinnerImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/filterClassSpinner"
+                android:layout_alignEnd="@+id/filterClassSpinner"
+                android:layout_alignRight="@+id/filterClassSpinner"
+                android:layout_alignTop="@+id/filterClassSpinner"
+                android:src="@drawable/picklist50" />
+
+
+            <Spinner
+                android:id="@+id/filterDivisionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/endTextView"
+                android:layout_marginTop="35dp"
+                android:layout_toEndOf="@+id/filterCenterView"
+                android:layout_toRightOf="@+id/filterCenterView"
+                android:background="@drawable/assign_filter_date_bg"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/divisionSpinnerImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/filterDivisionSpinner"
+                android:layout_alignEnd="@+id/filterDivisionSpinner"
+                android:layout_alignRight="@+id/filterDivisionSpinner"
+                android:layout_alignTop="@+id/filterDivisionSpinner"
+                android:src="@drawable/picklist50" />
+
+
+            <Spinner
+                android:id="@+id/selectSubjectSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/assign_filter_date_bg"
+                android:gravity="center"
+                android:hint="Subject "
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/selectSubjectSpinner"
+                android:layout_alignEnd="@+id/selectSubjectSpinner"
+                android:layout_alignRight="@+id/selectSubjectSpinner"
+                android:layout_alignTop="@+id/selectSubjectSpinner"
+                android:src="@drawable/picklist50" />
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/blue_circle_bg"
+                android:gravity="center"
+                android:shadowColor="#7F000000"
+                android:shadowRadius="5"
+                android:text="Search"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

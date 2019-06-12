@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/notification_card_bg"
+
+    android:padding="1dp"
+    android:weightSum="3.8">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:paddingStart="5dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"/>
+
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/notify_alert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:drawableTop="@drawable/ic_notifications_active_white_24dp"
+        android:gravity="center"
+        android:text="Alert"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/notify_assignment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1"
+        android:drawableTop="@drawable/ic_assignment"
+        android:gravity="center"
+        android:text="Assignment"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/notify_attendance"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/notification_attendance_icon"
+        android:gravity="center"
+        android:text="Attendance"
+        android:textColor="@color/colorWhite" />
+
+    <ImageView
+        android:id="@+id/notify_close"
+        android:layout_width="0dp"
+        android:padding="1dp"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"/>
+
+
+</LinearLayout>

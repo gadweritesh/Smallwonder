@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp">
+
+
+    <View
+        android:id="@+id/horizontalView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="211dp" />
+
+
+    <View
+        android:id="@+id/verticalView"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/pendingInstallmentFeesInformationCv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/horizontalView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="13dp"
+        card_view:cardBackgroundColor="@color/feesDueDashboardColor"
+        card_view:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/nextInstallmentTextView"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="21dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Amount Due "
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/nextInstallmentInputTextView"
+                style="@style/Base.TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:text="₹ 0"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/nextInstallmentDueDateTextView"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/nextInstallmentTextView"
+                android:layout_alignLeft="@+id/nextInstallmentTextView"
+                android:layout_alignRight="@+id/nextInstallmentTextView"
+                android:layout_alignStart="@+id/nextInstallmentTextView"
+                android:layout_below="@+id/nextInstallmentInputTextView"
+                android:layout_marginTop="27dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/feesHistoryFeesInformationCv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalView"
+        card_view:cardElevation="3dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/fees_information_payment_history"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/fees_list_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="50">
+
+
+                <TextView
+                    android:id="@+id/feesDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="12"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingStart="2dp"
+                    android:paddingTop="5dp"
+                    android:text="Due Date"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/feesAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="13"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingStart="2dp"
+                    android:paddingTop="5dp"
+                    android:text="Amount"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/feesStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="13"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingStart="2dp"
+                    android:paddingTop="5dp"
+                    android:text="Status"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/feeTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="12"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingStart="2dp"
+                    android:paddingTop="5dp"
+                    android:text="Title"
+                    android:textColor="@color/textColor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2.3dp"
+                android:background="@drawable/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ListView
+                    android:id="@+id/paymentHistoryListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/feeNoDataTextView"
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="@string/noDataAvailable"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold|italic"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

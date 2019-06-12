@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/approvalRollNoTextView"
+        android:layout_weight="0.2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#00000000" />
+
+    <TextView
+        android:id="@+id/approvalNameTextView"
+        android:layout_weight="0.7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp"
+        android:text="Ajinkya Gaurkar"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/approvalStatusTextView"
+        android:layout_weight="0.1"
+        android:layout_width="0dp"
+        android:layout_margin="8dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/red_circe_bg"
+        android:gravity="center"
+        android:text="P"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

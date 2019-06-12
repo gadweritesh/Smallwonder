@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attendanceMarkLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/attendanceMarkLinear"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="start"
+            android:paddingStart="10dp"
+            android:text="Roll No."
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.5"
+            android:gravity="start"
+            android:text="Name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Status"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/markAttendanceListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view16"
+        android:layout_below="@+id/attendanceMarkLinear"
+        android:choiceMode="multipleChoice" />
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/presentCountTextView"
+        android:layout_alignStart="@+id/presentCountTextView"
+        android:layout_alignTop="@+id/presentCountTextView"
+        android:background="@drawable/attendance_count_bg" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary" />
+
+    <CheckBox
+        android:id="@+id/markAllCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/markAttendanceListView"
+        android:checked="false"
+        android:text="Mark all"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:theme="@style/MarkAttendanceCheckBox" />
+
+
+    <Button
+        android:id="@+id/draftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/markAttendanceListView"
+        android:layout_toEndOf="@+id/view18"
+        android:layout_toRightOf="@+id/view18"
+        android:background="@color/colorPrimary"
+        android:text="Draft"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/presentCountTextView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="00"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view18"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:text="Present"
+        android:textColor="@color/colorWhite" />
+
+
+    <TextView
+        android:id="@+id/noDataAttendanceMarkTextView"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic" />
+
+    <ProgressBar
+        android:id="@+id/attendanceMarkProgressBar"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/assmnt_approval_snack_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <Spinner
+        android:id="@+id/ass_credits_awardes_spinner"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/ass_notes_textView"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ass_credits_awardes_spinner"
+        android:layout_alignLeft="@+id/ass_credits_awardes_spinner"
+        android:layout_alignRight="@+id/ass_credits_awardes_spinner"
+        android:layout_alignStart="@+id/ass_credits_awardes_spinner"
+        android:layout_below="@+id/ass_credits_awardes_spinner"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/assign_filter_date_bg"
+        android:hint="Add remarks"
+        android:maxLines="10"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/approvedScoresTextView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ass_credits_awardes_spinner"
+        android:layout_alignEnd="@+id/ass_credits_awardes_spinner"
+        android:layout_alignLeft="@+id/ass_credits_awardes_spinner"
+        android:layout_alignRight="@+id/ass_credits_awardes_spinner"
+        android:layout_alignStart="@+id/ass_credits_awardes_spinner"
+        android:layout_alignTop="@+id/ass_credits_awardes_spinner"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="23"
+        android:textStyle="bold" />
+
+</RelativeLayout>

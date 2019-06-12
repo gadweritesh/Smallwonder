@@ -1,0 +1,200 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/mainAlertPostLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:id="@+id/viewVertical"
+            android:layout_width="8dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/spinnerAlertClass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/viewVertical"
+            android:layout_toStartOf="@+id/viewVertical"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerAlertClass"
+            android:layout_alignEnd="@+id/spinnerAlertClass"
+            android:layout_alignTop="@+id/spinnerAlertClass"
+            android:src="@drawable/picklist50" />
+
+        <Spinner
+            android:id="@+id/spinnerAlertDivision"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/spinnerAlertClass"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/viewVertical"
+            android:layout_toRightOf="@+id/viewVertical"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerAlertDivision"
+            android:layout_alignEnd="@+id/spinnerAlertDivision"
+            android:layout_alignTop="@+id/spinnerAlertDivision"
+            android:src="@drawable/picklist50" />
+
+
+        <Spinner
+            android:id="@+id/spinnerAlertTag"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/spinnerAlertClass"
+            android:layout_below="@+id/spinnerAlertClass"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/viewVertical"
+            android:layout_toStartOf="@+id/viewVertical"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerAlertTag"
+            android:layout_alignEnd="@+id/spinnerAlertTag"
+            android:layout_alignTop="@+id/spinnerAlertTag"
+            android:src="@drawable/picklist50" />
+
+        <Spinner
+            android:id="@+id/spinnerAlertPriority"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/spinnerAlertDivision"
+            android:layout_alignRight="@+id/spinnerAlertDivision"
+            android:layout_alignTop="@+id/spinnerAlertTag"
+            android:layout_below="@+id/spinnerAlertDivision"
+            android:layout_toEndOf="@+id/viewVertical"
+            android:layout_toRightOf="@+id/viewVertical"
+            android:background="@drawable/assign_filter_date_bg" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerAlertPriority"
+            android:layout_alignEnd="@+id/spinnerAlertPriority"
+            android:layout_alignTop="@+id/spinnerAlertPriority"
+            android:src="@drawable/picklist50" />
+
+        <TextView
+            android:id="@+id/spinnerAlertStudent"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/spinnerAlertDivision"
+            android:layout_alignStart="@+id/spinnerAlertClass"
+            android:layout_below="@+id/spinnerAlertTag"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerAlertStudent"
+            android:layout_alignEnd="@+id/spinnerAlertStudent"
+            android:layout_alignRight="@+id/spinnerAlertStudent"
+            android:layout_alignTop="@+id/spinnerAlertStudent"
+            android:src="@drawable/picklist50" />
+
+
+        <EditText
+            android:id="@+id/alertTitleTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerAlertDivision"
+            android:layout_alignStart="@+id/spinnerAlertClass"
+            android:layout_below="@+id/spinnerAlertStudent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:ellipsize="end"
+            android:hint="Title"
+            android:textColor="@color/textColorDark"
+            android:maxLines="2"
+            android:minHeight="45dp"
+            android:padding="3dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/alertTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/alertTitleTextView"
+            android:layout_alignRight="@+id/alertTitleTextView"
+            android:layout_alignStart="@+id/alertTitleTextView"
+            android:layout_below="@+id/alertTitleTextView"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="start"
+            android:hint="Add description here"
+            android:minHeight="100dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="3dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/alertPost_attachment_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/alertTextDescription"
+            android:layout_alignStart="@+id/alertTextDescription"
+            android:layout_below="@+id/alertTextDescription"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/alertPostRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="1dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/alertTextDescription"
+            android:layout_alignStart="@+id/alertTextDescription"
+            android:layout_below="@+id/alertTextDescription" />
+
+    </RelativeLayout>
+
+</ScrollView>

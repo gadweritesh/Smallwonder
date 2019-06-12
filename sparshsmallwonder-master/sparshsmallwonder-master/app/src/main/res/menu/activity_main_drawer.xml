@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/menunavigationicon"
+            android:title="Dashboard" />
+
+        <!--<item-->
+        <!--android:id="@+id/nav_profile"-->
+        <!--android:icon="@drawable/ic_menu_profile"-->
+        <!--android:title="Profile" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_assignment"-->
+        <!--android:icon="@drawable/ic_assignment_24dp"-->
+        <!--android:title="Assignments" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_attendance"-->
+        <!--android:icon="@drawable/ic_menu_gallery"-->
+        <!--android:title="Attendance" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_alert"-->
+        <!--android:icon="@android:drawable/ic_dialog_alert"-->
+        <!--android:title="Alerts" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_calendar"-->
+        <!--android:title="Calendar" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_parent"-->
+        <!--android:icon="@drawable/ic_parent_zone_24dp"-->
+        <!--android:title="Parent Zone" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_timetable"-->
+        <!--android:icon="@drawable/ic_grid_on_24dp"-->
+        <!--android:title="Time Table" />-->
+
+        <item
+            android:id="@+id/nav_syllabus"
+            android:icon="@drawable/syllabusnavigationicon"
+            android:title="Syllabus" />
+        <item
+            android:id="@+id/nav_exam"
+            android:icon="@drawable/examreportnavigation"
+            android:title="Exam Schedule" />
+
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/reportnavigation"
+            android:title="Report" />
+
+        <item
+            android:id="@+id/nav_bus"
+            android:icon="@drawable/bustrackernavigationicon"
+            android:title="Bus Tracker" />
+
+        <item
+            android:id="@+id/nav_fees"
+            android:icon="@drawable/feesnavigationicon"
+            android:title="Fees" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/feedbacknavigationicon"
+            android:title="Feedback" />
+
+        <item
+            android:id="@+id/nav_website"
+            android:icon="@drawable/schoolwebsite"
+            android:title="School Website" />
+
+        <item
+            android:id="@+id/nav_portal_link"
+            android:icon="@drawable/webappnavigationicon"
+            android:title="Web App" />
+
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/videogallerynavigationicon"
+            android:title="Video Gallery" />
+
+
+    </group>
+
+    <item android:title="App Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/starnavigationicon"
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/sharenavigationicon"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_achievement"
+                android:icon="@drawable/ic_achievement_trophy"
+                android:title="Achievement" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/settingnavigationicon"
+                android:title="Setting" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/logoutnavigationicon"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

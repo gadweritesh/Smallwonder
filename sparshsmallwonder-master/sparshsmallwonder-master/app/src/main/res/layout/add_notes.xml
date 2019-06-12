@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentcontrolothers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view44"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+    <View
+        android:id="@+id/view42"
+        android:layout_width="10dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/tagspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/view42"
+        android:layout_toStartOf="@+id/view42"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tagspinner"
+        android:layout_alignLeft="@+id/view42"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/view42"
+        android:layout_alignTop="@+id/tagspinner"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Select Time  "
+        android:textColor="#000000"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/tospinner"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/timepicker"
+        android:layout_alignStart="@+id/tagspinner"
+        android:layout_below="@+id/tagspinner"
+        android:layout_marginTop="25dp"
+        android:layout_toStartOf="@+id/timepicker"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="center"
+        android:layout_alignRight="@+id/timepicker"
+        android:layout_alignLeft="@+id/tagspinner"
+        android:layout_toLeftOf="@+id/timepicker" />
+
+    <EditText
+        android:id="@+id/descriptioneditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="170dp"
+        android:layout_alignEnd="@+id/imageView21"
+        android:layout_alignStart="@+id/tospinner"
+        android:layout_below="@+id/tospinner"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="start"
+        android:hint="Add Descrpition"
+        android:padding="5dp"
+        android:layout_alignRight="@+id/imageView21"
+        android:layout_alignLeft="@+id/tospinner" />
+
+    <Button
+        android:id="@+id/notesSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/descriptioneditText"
+        android:layout_alignStart="@+id/descriptioneditText"
+        android:layout_below="@+id/descriptioneditText"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/descriptioneditText"
+        android:layout_alignLeft="@+id/descriptioneditText" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tagspinner"
+        android:layout_alignEnd="@+id/tagspinner"
+        android:layout_alignTop="@+id/tagspinner"
+        android:src="@drawable/picklist50"
+        android:layout_alignRight="@+id/tagspinner" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tospinner"
+        android:layout_alignEnd="@+id/tospinner"
+        android:layout_alignTop="@+id/tospinner"
+        android:src="@drawable/picklist50"
+        android:layout_alignRight="@+id/tospinner" />
+
+
+</RelativeLayout>

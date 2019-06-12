@@ -1,0 +1,206 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/mainAssPostLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewCenterVertical"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/spinnerAssignmentClass"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/viewCenterVertical"
+            android:layout_toStartOf="@+id/viewCenterVertical"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerAssignmentClass"
+            android:layout_alignEnd="@+id/spinnerAssignmentClass"
+            android:layout_alignTop="@+id/spinnerAssignmentClass"
+            android:src="@drawable/picklist50" />
+
+        <Spinner
+            android:id="@+id/spinnerAssignmentDivision"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/viewCenterVertical"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerAssignmentDivision"
+            android:layout_alignEnd="@+id/spinnerAssignmentDivision"
+            android:layout_alignTop="@+id/spinnerAssignmentDivision"
+            android:src="@drawable/picklist50" />
+
+        <Spinner
+            android:id="@+id/spinnerAssignmentSubject"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/spinnerAssignmentClass"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/viewCenterVertical"
+            android:layout_toStartOf="@+id/viewCenterVertical"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerAssignmentSubject"
+            android:layout_alignEnd="@+id/spinnerAssignmentSubject"
+            android:layout_alignTop="@+id/spinnerAssignmentSubject"
+            android:src="@drawable/picklist50" />
+
+
+        <TextView
+            android:id="@+id/spinnerAssignmentDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/spinnerAssignmentSubject"
+            android:layout_marginEnd="10dp"
+            android:layout_toRightOf="@+id/viewCenterVertical"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="center"
+            android:text="[ Due date ]"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/spinnerAssignmentScoreType"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/spinnerAssignmentDueDate"
+            android:layout_alignStart="@+id/spinnerAssignmentSubject"
+            android:layout_below="@+id/spinnerAssignmentDueDate"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/assign_filter_date_bg" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinnerAssignmentScoreType"
+            android:layout_alignEnd="@+id/spinnerAssignmentScoreType"
+            android:layout_alignTop="@+id/spinnerAssignmentScoreType"
+            android:src="@drawable/picklist50" />
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/creditsSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerAssignmentScoreType"
+            android:layout_alignStart="@+id/spinnerAssignmentScoreType"
+            android:layout_below="@+id/spinnerAssignmentScoreType"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/creditsCountTextView"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/spinnerAssignmentScoreType"
+            android:layout_alignLeft="@+id/spinnerAssignmentScoreType"
+            android:layout_alignStart="@+id/spinnerAssignmentScoreType"
+            android:layout_alignTop="@+id/spinnerAssignmentScoreType"
+            android:layout_margin="3dp"
+            android:background="@drawable/assmnt_creditcount_circle_bg"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="#149883"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/assignmentTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerAssignmentScoreType"
+            android:layout_alignStart="@+id/spinnerAssignmentScoreType"
+            android:layout_below="@+id/creditsSeekBar"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/assign_filter_date_bg"
+            android:gravity="start"
+            android:hint="Add Description here"
+            android:minHeight="100dp"
+            android:padding="5dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/assignmentPost_attachment_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignEnd="@+id/assignmentTextDescription"
+            android:layout_alignStart="@+id/assignmentTextDescription"
+            android:layout_below="@+id/assignmentTextDescription"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/alert_detail_attachment_panel_cv"
+                android:layout_alignStart="@+id/alert_detail_attachment_panel_cv"
+                android:layout_alignTop="@+id/alert_detail_attachment_panel_cv">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/assignPostRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+
+                    android:padding="1dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/assignPostRecyclerView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/assignmentTextDescription"-->
+        <!--android:layout_alignStart="@+id/assignmentTextDescription"-->
+        <!--android:layout_below="@+id/assignmentTextDescription"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:padding="5dp" />-->
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ads_unit">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+
+</ScrollView>

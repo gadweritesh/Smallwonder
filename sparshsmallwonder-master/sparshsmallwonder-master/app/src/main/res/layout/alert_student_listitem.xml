@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alertStudentLinearItem"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal"
+    android:paddingEnd="5dp"
+    android:paddingStart="10dp">
+
+    <!--android:clickable="false"-->
+    <!--android:focusable="false"-->
+    <!--android:focusableInTouchMode="false"-->
+
+    <CheckBox
+        android:id="@+id/alertCheckBox"
+        style="@style/checkBoxStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/colorPrimary"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/text_drop_down"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autoSizeTextType="uniform"
+        android:gravity="start"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+    <!--<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/text1"--><!--android:layout_width="match_parent"--><!--android:layout_height="?android:attr/listPreferredItemHeightSmall"--><!--android:textAppearance="?android:attr/textAppearanceListItemSmall"--><!--android:gravity="center_vertical"--><!--android:checkMark="?android:attr/listChoiceIndicatorMultiple"--><!--android:paddingStart="?android:attr/listPreferredItemPaddingStart"--><!--android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" />-->

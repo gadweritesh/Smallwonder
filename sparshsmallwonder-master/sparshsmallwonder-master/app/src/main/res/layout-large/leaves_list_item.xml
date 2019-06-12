@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="8dp">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <View
+            android:id="@+id/view42"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:id="@+id/view37"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/view41"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/view37"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/view37"
+            android:layout_alignTop="@+id/view37"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginStart="1dp" />
+
+        <TextView
+            android:id="@+id/leavesDateTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view41"
+            android:layout_alignLeft="@+id/view41"
+            android:layout_alignStart="@+id/view41"
+            android:paddingBottom="3dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:text="10 Oct 7:15 AM"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/leavesStatusTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view41"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/view41"
+            android:paddingBottom="3dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="10dp"
+            android:paddingStart="3dp"
+            android:paddingTop="3dp"
+            android:text="Pending"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/studentNameTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view45"
+            android:gravity="center_vertical"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="10dp"
+            android:text="Student Name"
+            android:textColor="@color/textColor"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/namePartition"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/studentNameTextView"
+            android:layout_alignEnd="@+id/studentNameTextView"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/studentNameTextView"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#8f8f8f" />
+
+
+        <TextView
+            android:id="@+id/leavesTitleTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view41"
+            android:layout_alignRight="@+id/view41"
+            android:layout_alignTop="@+id/view37"
+            android:layout_toEndOf="@+id/studentNameTextView"
+            android:layout_toRightOf="@+id/studentNameTextView"
+            android:ellipsize="end"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:paddingBottom="4dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingStart="5dp"
+            android:paddingTop="3dp"
+            android:text="John cannot come today. He is sick "
+            android:textColor="#F06103"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view45"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/leavesTitleTextView"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#8f8f8f" />
+
+        <TextView
+            android:id="@+id/leavesFromTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/leavesToTextView"
+            android:layout_toEndOf="@+id/textView59"
+            android:layout_toLeftOf="@+id/textView29"
+            android:layout_toRightOf="@+id/textView59"
+            android:layout_toStartOf="@+id/textView29"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/leavesToTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view41"
+            android:layout_alignRight="@+id/view41"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView29"
+            android:layout_toRightOf="@+id/textView29"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/leavesToTextView"
+            android:layout_toEndOf="@+id/view42"
+            android:layout_toRightOf="@+id/view42"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/leavesperiodTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view41"
+            android:layout_alignLeft="@+id/view41"
+            android:layout_alignRight="@+id/view41"
+            android:layout_alignStart="@+id/view41"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView59"
+            android:layout_toRightOf="@+id/textView59"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#404040"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

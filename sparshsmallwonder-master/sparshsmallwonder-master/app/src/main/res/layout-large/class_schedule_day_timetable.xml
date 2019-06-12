@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/class_schedule_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="30">
+
+        <TextView
+            android:id="@+id/start_time_textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:textColor="#f6273a4e" />
+
+
+        <TextView
+            android:id="@+id/subject_textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:paddingEnd="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingStart="15dp"
+            android:gravity="center_vertical"
+            android:textColor="#f6273a4e"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_teacher_name_textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:padding="8dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#f6273a4e"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout4"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="30">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8" />
+
+        <TextView
+            android:id="@+id/free_time_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout4"
+            android:layout_alignParentTop="true"
+            android:layout_weight="22"
+            android:background="#00211c1c"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text=""
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/endtime_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout4"
+        android:text="" />
+
+
+</RelativeLayout>

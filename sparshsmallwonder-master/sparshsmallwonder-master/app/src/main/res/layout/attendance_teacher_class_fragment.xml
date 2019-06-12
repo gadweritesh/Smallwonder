@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/view50"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/view51"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_centerVertical="true" />
+
+    <Spinner
+        android:id="@+id/attendanceTeacherDivisionSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/attendanceTeacherClassSpinner"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/view50"
+        android:layout_toRightOf="@+id/view50"
+        android:background="@drawable/assign_filter_date_bg" />
+
+    <Spinner
+        android:id="@+id/attendanceTeacherClassSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/view50"
+        android:background="@drawable/assign_filter_date_bg" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/attendanceTeacherDivisionSpinner"
+        android:layout_alignEnd="@+id/attendanceTeacherDivisionSpinner"
+        android:layout_alignRight="@+id/attendanceTeacherDivisionSpinner"
+        android:layout_alignTop="@+id/attendanceTeacherDivisionSpinner"
+        android:src="@drawable/picklist50" />
+
+
+    <Button
+        android:id="@+id/attendanceReviewButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/view51"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/view50"
+        android:layout_toStartOf="@+id/view50"
+        android:background="@drawable/blue_circle_bg"
+        android:gravity="center"
+        android:shadowColor="#7F000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Review"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/attendanceMarkButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/view51"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/view50"
+        android:layout_toRightOf="@+id/view50"
+        android:background="@drawable/blue_circle_bg"
+        android:gravity="center"
+        android:text="Start"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/attendanceTeacherClassSpinner"
+        android:layout_alignTop="@+id/attendanceTeacherClassSpinner"
+        android:layout_toLeftOf="@+id/view50"
+        android:layout_toStartOf="@+id/view50"
+        android:src="@drawable/picklist50" />
+
+
+    <TextView
+        android:id="@+id/todayAttendanceTitleTextView"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view51"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Attendance for 13-Mar-2016"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic" />
+
+
+    <TextView
+        android:id="@+id/todayAttendanceStatusTextView"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/todayAttendanceTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingEnd="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingStart="50dp"
+        android:paddingTop="5dp"
+        android:shadowColor="#7fdadada"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:text="Marked"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/draftTitleTextView"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/todayAttendanceStatusTextView"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp"
+        android:text=" Drafts"
+        android:textColor="#fff"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/attendanceDraftListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/draftTitleTextView"
+        android:divider="#00ffffff"
+        android:dividerHeight="5dp" />
+
+</RelativeLayout>

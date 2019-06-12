@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/examReportSummaryCardView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="13dp"
+        android:elevation="4dp"
+        card_view:cardBackgroundColor="@color/feesDueDashboardColor"
+        card_view:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/examTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:id="@+id/partitionView"
+                android:layout_width="1.5dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/detailTextView"
+                android:layout_alignTop="@+id/examResultSummaryTextView"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/stick" />
+
+            <TextView
+                android:id="@+id/examResultSummaryTextView"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/examTitleTextView"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/partitionView"
+                android:layout_toStartOf="@+id/partitionView"
+                android:gravity="center"
+                android:text="0/0"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/examSummaryCommentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/examResultSummaryTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/examResultSummaryTextView"
+                android:layout_below="@+id/examResultSummaryTextView"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="(Obtained / Total Marks )"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/finalGradeTextView"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/examSummaryCommentTextView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/examResultSummaryTextView"
+                android:layout_toEndOf="@+id/partitionView"
+                android:layout_toRightOf="@+id/partitionView"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/examSummaryCommentTextView"
+                android:layout_alignLeft="@+id/partitionView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/partitionView"
+                android:layout_alignTop="@+id/examSummaryCommentTextView"
+                android:gravity="center"
+                android:text="Final Grade"
+                android:textColor="@color/colorWhite" />
+
+
+            <TextView
+                android:id="@+id/detailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:padding="2dp"
+                android:text="*Click For more Detail..."
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/examResultHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:elevation="4dp"
+        card_view:cardElevation="4dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Exam Results"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/examResultHistoryView"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/stick"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/examResultHistoryListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="#d6d4d4" />
+
+                <TextView
+                    android:id="@+id/examNoDataTextView"
+                    style="@android:style/TextAppearance.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="@string/noDataAvailable"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold|italic"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

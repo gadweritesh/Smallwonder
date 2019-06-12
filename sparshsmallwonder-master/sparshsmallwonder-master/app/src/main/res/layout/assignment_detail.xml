@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/assignmentDetailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/assignment_detail_top_panel_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="10">
+
+                    <RelativeLayout
+                        android:id="@+id/assignRelativeLayoutLike"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8">
+
+                        <View
+                            android:id="@+id/view1"
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true" />
+
+                        <TextView
+                            android:id="@+id/postOn"
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/view1"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Post On"
+                            android:textColor="@color/textColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/postDateTextView"
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/view1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="25 JAN 2018"
+                            android:textColor="@color/textColorDark"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/dueDate"
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/postOn"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Due Date"
+                            android:textColor="@color/textColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/dueDateTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/postDateTextView"
+                            android:layout_toEndOf="@+id/view1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="25 JAN 2018"
+                            android:textColor="@color/red"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/assignmentSubmittedBy"
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dueDate"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="Submitted By"
+                            android:textColor="@color/textColor"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/submittedByTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dueDateTextView"
+                            android:layout_toEndOf="@+id/view1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Manoj Sharma"
+                            android:textColor="@color/textColorDark"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <com.like.LikeButton
+                        android:id="@+id/likeButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        app:anim_scale_factor="2"
+                        app:icon_size="25dp" />
+                    <!--<ImageView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:src="@drawable/ic_heart"-->
+                    <!--android:padding="12dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="2" />-->
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/assignment_detail_description_panel_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/assignment_detail_top_panel_cv"
+                android:layout_alignStart="@+id/assignment_detail_top_panel_cv"
+                android:layout_below="@+id/assignment_detail_top_panel_cv"
+                android:layout_marginEnd="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="4dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/alert_detail_description_panel_cv"
+                    android:layout_alignLeft="@+id/alert_detail_description_panel_cv"
+                    android:layout_alignStart="@+id/alert_detail_description_panel_cv"
+                    android:layout_alignTop="@+id/alert_detail_description_panel_cv">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/colorPrimary"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Description"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextView"
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView9"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:autoLink="all"
+                        android:minLines="2"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/assignment_detail_comment_panel_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/assignment_detail_description_panel_cv"
+                android:layout_alignStart="@+id/assignment_detail_description_panel_cv"
+                android:layout_below="@+id/assignment_detail_description_panel_cv"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/alert_detail_description_panel_cv"
+                    android:layout_alignLeft="@+id/alert_detail_description_panel_cv"
+                    android:layout_alignStart="@+id/alert_detail_description_panel_cv"
+                    android:layout_alignTop="@+id/alert_detail_description_panel_cv">
+
+                    <TextView
+                        android:id="@+id/commentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView10"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:maxLines="10"
+                        android:minLines="2"
+                        android:padding="5dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/commentTextView"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/commentTextView"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="3"
+                        android:padding="5dp"
+                        android:text="Teacher Comments"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/assignment_detail_attachment_panel_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/assignment_detail_comment_panel_cv"
+                android:layout_below="@+id/assignment_detail_comment_panel_cv"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/alert_detail_attachment_panel_cv"
+                    android:layout_alignStart="@+id/alert_detail_attachment_panel_cv"
+                    android:layout_alignTop="@+id/alert_detail_attachment_panel_cv">
+
+                    <View
+                        android:id="@+id/view70"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/downloadingTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Attachments"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view73"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/downloadingTextView"
+                        android:background="#d6d6d6" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/assignmentAttachmentRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/downloadingTextView"
+                        android:layout_marginBottom="10dp"
+                        android:padding="1dp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:onClick="SendToApproval"
+        android:id="@+id/assignmentApproveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_assignment_turned_in_white_18dp"
+        app:backgroundTint="@color/colorPrimary" />
+
+
+
+
+</RelativeLayout>

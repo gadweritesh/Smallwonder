@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#ccccca" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/setting_notification"
+            android:layout_alignBottom="@+id/textNotifications"
+            android:layout_alignTop="@+id/textNotifications"
+            android:padding="5dp" />
+
+        <Switch
+            android:id="@+id/notificationSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textNotifications"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/imageView8"
+            android:layout_toLeftOf="@+id/notificationSwitch"
+            android:layout_toRightOf="@+id/imageView8"
+            android:layout_toStartOf="@id/notificationSwitch"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="Notifications" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#ccccca" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/setting_feedback" />
+
+        <TextView
+            android:id="@+id/textfeedback"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_toEndOf="@+id/imageView9"
+            android:layout_toRightOf="@+id/imageView9"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="Feedback" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#ccccca" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/setting_reminder"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textViewRemind"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_toEndOf="@+id/imageView11"
+            android:layout_toRightOf="@+id/imageView11"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="Assignment Reminder" />
+
+        <TextView
+            android:id="@+id/textViewAssignmentTime"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|start"
+            android:padding="10dp"
+            android:text="06:00 PM" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#ccccca" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/setting_about" />
+
+        <TextView
+            android:id="@+id/aboutTextView"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_toEndOf="@+id/imageView15"
+            android:layout_toRightOf="@+id/imageView15"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:text="About Us" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

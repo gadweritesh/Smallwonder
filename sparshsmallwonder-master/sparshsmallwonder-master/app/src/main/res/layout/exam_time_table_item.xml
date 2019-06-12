@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:weightSum="30">
+
+    <TextView
+        android:id="@+id/exam_time_table_date"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/exam_time_table_time"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="12"
+        android:gravity="center"
+        android:textColor="#f6273a4e"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/exam_time_table_subject"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>

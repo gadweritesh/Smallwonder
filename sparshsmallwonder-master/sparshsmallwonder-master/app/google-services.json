@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1013616733759",
+    "firebase_url": "https://smallwonder-7c0b1.firebaseio.com",
+    "project_id": "smallwonder-7c0b1",
+    "storage_bucket": "smallwonder-7c0b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013616733759:android:bed9596747242bfd",
+        "android_client_info": {
+          "package_name": "com.relecotech.androidsparsh_smallwonder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013616733759-kh36hnl2l6d5bt9d3e0orgson683n928.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIPzNlZfvbRSBDyh91szBfvmjBn1PNFJw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relLeaveApprove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/notesApproveReplyButton"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Reply"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/deny_approve_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10.1">
+
+            <Button
+                android:id="@+id/notesApproveMeetingDenyButton"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@color/red"
+                android:text="Deny"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1" />
+
+            <Button
+                android:id="@+id/notesApproveMeetingApproveButton"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@color/green"
+                android:text="Approve"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relLeaveApprove">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view37"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+
+
+            <TextView
+                android:id="@+id/notesApproveCategory"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/assign_filter_date_bg"
+                android:padding="5dp"
+                android:text="General Query"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/notesApproveScheduleMeetTextView"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/notesApproveCategory"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/notesApproveCategory"
+                android:layout_toRightOf="@+id/notesApproveCategory"
+                android:paddingLeft="3dp"
+                android:paddingStart="3dp"
+                android:text="Requested Schedule           28-12-2015 12:45 PM"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/notesApproveDescriptionTextView"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/notesApproveScheduleMeetTextView"
+                android:layout_alignLeft="@+id/notesApproveCategory"
+                android:layout_alignStart="@+id/notesApproveCategory"
+                android:layout_below="@+id/notesApproveScheduleMeetTextView"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/assign_filter_date_bg"
+                android:minHeight="120dp"
+                android:padding="5dp"
+                android:scrollHorizontally="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/notesApproveDescriptionTextView"
+                android:layout_alignLeft="@+id/notesApproveDescriptionTextView"
+                android:layout_alignRight="@+id/notesApproveDescriptionTextView"
+                android:layout_alignStart="@+id/notesApproveDescriptionTextView"
+                android:layout_below="@+id/notesApproveDescriptionTextView"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/replyHeaderTextView1"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leave_notes_reply_bg"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="Reply" />
+
+                <EditText
+                    android:id="@+id/notesApproveReplyEditText"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/assign_filter_date_bg"
+                    android:gravity="start"
+                    android:minHeight="120dp"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

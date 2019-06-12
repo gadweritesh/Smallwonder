@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/exam_subject_result_linarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:weightSum="50">
+
+        <TextView
+            android:id="@+id/subject_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            android:text="Subject" />
+
+        <TextView
+            android:id="@+id/obatinedmark_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Mark Obt." />
+
+        <TextView
+            android:id="@+id/obatinedgrade_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Total Marks" />
+
+        <TextView
+            android:id="@+id/totalmark_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Grade" />
+
+        <TextView
+            android:id="@+id/comment_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="center"
+            android:lines="2"
+            android:textStyle="bold"
+            android:text="Subject's Comment" />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/subjectListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/exam_subject_result_linarlayout" />
+</RelativeLayout>

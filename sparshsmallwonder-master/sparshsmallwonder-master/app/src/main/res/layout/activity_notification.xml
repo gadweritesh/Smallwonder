@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:background="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/notificationListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/noNotificationTextView"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/graidentsecond"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-35dp"
+        android:background="@drawable/gradient_six"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardElevation="0dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:id="@+id/relative"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/graidentthree">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|end">
+
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="120dp"
+                                android:layout_marginBottom="10dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:src="@drawable/dashboardimagebook"  />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right|end">
+
+                        </LinearLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/dashTeacherImageView"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/ic_user"
+                            app:civ_border_color="@color/colorWhite"
+                            app:civ_border_width="2dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/dashAdminImageView"
+                            android:layout_alignBottom="@+id/dashAdminImageView"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="70dp"
+                            android:layout_toEndOf="@+id/dashAdminImageView"
+                            android:layout_toRightOf="@+id/dashAdminImageView"
+                            android:orientation="vertical"
+                            android:weightSum="2.1">
+
+                            <TextView
+                                android:id="@+id/name_textView"
+                                style="@style/Base.TextAppearance.AppCompat.Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:gravity="start|center_vertical"
+                                android:paddingStart="5dp"
+                                android:text="Admin Name"
+                                android:textStyle="bold"
+                                android:textColor="@color/fontcolorfull" />
+
+                            <TextView
+                                android:id="@+id/class_textView"
+                                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="start|center_vertical"
+                                android:paddingStart="5dp"
+                                android:textStyle="bold"
+                                android:textColor="@color/fontcolorfull" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--    <TextView
+                    android:id="@+id/marqueHeadlineTextView"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative"
+                    android:background="@android:color/darker_gray"
+                    android:ellipsize="marquee"
+                    android:gravity="start|center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:padding="2dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white" />
+-->
+
+
+
+            <!-- <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text=""
+                 android:fontFamily="thinitalic"
+                 android:background="@drawable/graidentthree"
+                 android:textColor="@color/blackandwhite"
+                 />
+ -->
+            <TextView
+                android:id="@+id/textViewAlertTitle"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/viewAlertColor"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="5dp"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:text="@string/alert"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/fontcolor"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/viewAlertBg"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="5dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp">
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ripple_effect"
+                    android:elevation="0dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/viewAlertColor"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:background="@drawable/calendar_alert_background"
+                            android:orientation="vertical"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/alertTextFirst"
+                                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:paddingStart="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/fontcolor" />
+
+
+
+                            <TextView
+                                android:id="@+id/alertTextSecond"
+                                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:paddingStart="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/fontcolor"
+                                />
+
+                            <TextView
+                                android:id="@+id/alertTextThird"
+                                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:paddingStart="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/fontcolor"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/alertNoData"
+                            style="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimary" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textViewCalendarTitle"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/viewNotificationColor"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="1dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:gravity="center_vertical"
+                android:text="@string/calendar"
+                android:textColor="@color/fontcolor"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/viewCalendarBg"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp"
+                android:layout_marginRight="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ripple_effect"
+                    android:elevation="6dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/viewNotificationColor"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:background="@drawable/calendar_alert_background"
+                            android:orientation="vertical"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/calendarTextFirst"
+                                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:paddingStart="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/fontcolor" />
+
+                            <TextView
+                                android:id="@+id/calendarTextSecond"
+                                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:minEms="1"
+                                android:layout_margin="1dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="3dp"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:paddingStart="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/fontcolor"
+                                />
+
+                            <TextView
+                                android:id="@+id/calendarTextThird"
+                                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="1dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:minEms="2"
+                                android:layout_weight="1"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:paddingStart="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingEnd="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/fontcolor"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/calendarNoData"
+                            style="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="@color/colorPrimary" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/gradiant_five"
+                android:elevation="4dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="0dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_six">
+
+
+                    <View
+                        android:id="@+id/viewVertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true" />
+
+                    <View
+                        android:id="@+id/viewHorizontal"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="thinitalic"
+                        android:background="@drawable/graidentthree"
+                        android:textColor="@color/blackandwhite"
+                        />
+-->
+                    <LinearLayout
+                        android:id="@+id/assignment_linear_layout"
+                        android:layout_width="260dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_toStartOf="@+id/viewHorizontal"
+                        android:background="@drawable/bg_attendance"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="126dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/bookiconforservices"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/greywhite"
+                            android:layout_marginBottom="10dp"
+                            android:text="Assignment"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/attendance_linear_layout"
+                        android:layout_width="260dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@+id/viewHorizontal"
+                        android:background="@drawable/bg_timetable"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/attendanceforservices"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/greywhite"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/attendance"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/gallery_linear_layout"
+                        android:layout_width="260dp"
+                        android:layout_height="90dp"
+                        android:layout_below="@+id/assignment_linear_layout"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_toStartOf="@+id/viewHorizontal"
+                        android:background="@drawable/edge"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/imagegaleryforservice"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/greywhite"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/gallery"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/schedule_linear_layout"
+                        android:layout_width="260dp"
+                        android:layout_height="90dp"
+                        android:layout_below="@id/attendance_linear_layout"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_toEndOf="@+id/viewHorizontal"
+                        android:background="@drawable/bg_gallery"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/timetableiconnew"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/greywhite"
+                            android:layout_marginBottom="10dp"
+                            android:text="Time Table"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/profile_linear_layout"
+                        android:layout_width="260dp"
+                        android:layout_height="90dp"
+                        android:layout_below="@id/gallery_linear_layout"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_toStartOf="@+id/viewHorizontal"
+                        android:background="@drawable/gradient_profile"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/userprofilecardicon"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/greywhite"
+                            android:layout_marginBottom="10dp"
+                            android:text="Profile"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/parentzone_linear_layout"
+                        android:layout_width="260dp"
+                        android:layout_height="90dp"
+                        android:layout_below="@id/schedule_linear_layout"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_toEndOf="@+id/viewHorizontal"
+                        android:background="@drawable/gradient_parentzone"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/parentzonecardicon"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/greywhite"
+                            android:layout_marginBottom="10dp"
+                            android:text="Parent Zone"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--  <android.support.v7.widget.CardView
+                  android:layout_width="match_parent"
+                  android:layout_height="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginRight="10dp">
+
+                &lt;!&ndash;  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent" />
+  &ndash;&gt;
+              </android.support.v7.widget.CardView>
+  -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/AlertBg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_six"
+                android:elevation="4dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="4dp">
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </ScrollView>
+    <!--
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/gradient_six"
+            android:foreground="?attr/selectableItemBackground"
+            app:itemIconTint="@color/purplelight"
+            app:itemTextColor="@android:color/black"
+            app:menu="@menu/navigation" />
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/assignment_DateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/alert_date_bg"
+        android:padding="5dp"
+        android:text="26 Feb 2018"
+        android:textColor="@color/colorBlack"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="5dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/AssignmentLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/dashboard_title_bgcolor"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/assignment_title"
+                        style="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="10dp"
+                        android:text="MATHS"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/assignmentAttachmentPin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_attachment_white_36dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/AssignmentLinear"
+                    android:background="@color/colorGrey" />
+
+
+                <LinearLayout
+                    android:id="@+id/lastLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/AssignmentLinear"
+                    android:weightSum="6">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/student_credits_panel"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="8dp">
+
+                            <View
+                                android:id="@+id/view59"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true" />
+
+                            <TextView
+                                android:id="@+id/creditsNumeratorTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/view59"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/assignment_credits_numerator_bg"
+                                android:gravity="center"
+                                android:text="55"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/creditsDenominatorTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignTop="@+id/view59"
+                                android:background="@drawable/assignment_credit_denominator_bg"
+                                android:gravity="center"
+                                android:text="100"
+                                android:textColor="#fff"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/teacher_credits_panel"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/orange_circe_bg">
+
+                            <View
+                                android:id="@+id/view60"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true" />
+
+                            <TextView
+                                android:id="@+id/teacher_credits_textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:text="50"
+                                android:textColor="#fff"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/markText_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/view60"
+                                android:gravity="center"
+                                android:paddingBottom="3dp"
+                                android:text="Marks"
+                                android:textColor="#fff"
+                                android:textSize="8sp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/assignment_Body"
+                        style="@style/Base.TextAppearance.AppCompat.Large"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="5dp"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:paddingTop="8dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/lastLinear"
+                    android:background="@color/colorGrey" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/submittedByTextView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_below="@+id/view2"-->
+                <!--android:padding="5dp"-->
+                <!--android:text="Submitted By: "-->
+                <!--android:textSize="@dimen/abc_text_size_caption_material" />-->
+
+                <TextView
+                    android:id="@+id/assignmentLikeCountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/ic_thumb_on"
+                    android:gravity="center"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/moreTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/view2"
+                    android:padding="5dp"
+                    android:text="More..."
+                    android:textSize="@dimen/abc_text_size_caption_material"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

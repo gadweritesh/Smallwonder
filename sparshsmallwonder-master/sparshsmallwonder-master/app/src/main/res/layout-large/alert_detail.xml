@@ -1,0 +1,235 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/assignmentDetailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/alert_detail_top_panel_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayoutLike"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.5">
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:id="@+id/postOn"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/view1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Post On"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/alertDetailPostDateTextView"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/view1"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:text="25 JAN 2018"
+                        android:textColor="@color/textColorDark"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/alertDetailCategory"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/postOn"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Category"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/alertDetailCategoryTextView"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/alertDetailPostDateTextView"
+                        android:layout_toEndOf="@+id/view1"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:text="Attendance"
+                        android:textColor="@color/textColorDark"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/alertSubmittedBy"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/alertDetailCategory"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Submitted By"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/AlertDetailSubmittedByTextView"
+                        style="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/alertDetailCategoryTextView"
+                        android:layout_toEndOf="@+id/view1"
+                        android:gravity="start|center_vertical"
+                        android:padding="5dp"
+                        android:text="Manoj Sharma"
+                        android:textColor="@color/textColorDark"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <com.like.LikeButton
+                    android:id="@+id/alertDetailLikeButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.5"
+                    app:anim_scale_factor="2"
+                    app:icon_size="25dp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/alert_detail_description_panel_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/alert_detail_top_panel_cv"
+            android:layout_alignStart="@+id/alert_detail_top_panel_cv"
+            android:layout_below="@+id/alert_detail_top_panel_cv"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="15dp"
+            app:cardElevation="4dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/alert_detail_description_panel_cv"
+                android:layout_alignLeft="@+id/alert_detail_description_panel_cv"
+                android:layout_alignStart="@+id/alert_detail_description_panel_cv"
+                android:layout_alignTop="@+id/alert_detail_description_panel_cv">
+
+                <TextView
+                    android:id="@+id/alertDetailTitleTextView"
+                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimary"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/alertDetailDescriptionTextView"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alertDetailTitleTextView"
+                    android:autoLink="all"
+                    android:minHeight="100dp"
+                    android:minLines="2"
+                    android:padding="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/alert_detail_attachment_panel_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/alert_detail_description_panel_cv"
+            android:layout_below="@+id/alert_detail_description_panel_cv"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="15dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/alert_detail_attachment_panel_cv"
+                android:layout_alignStart="@+id/alert_detail_attachment_panel_cv"
+                android:layout_alignTop="@+id/alert_detail_attachment_panel_cv">
+
+
+                <TextView
+                    android:id="@+id/downloadingTextView"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Attachments"
+                    android:textColor="@color/textColor"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view73"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/downloadingTextView"
+                    android:background="#d6d6d6" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/alertAttachmentRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/downloadingTextView"
+                    android:layout_marginBottom="10dp"
+                    android:padding="1dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>

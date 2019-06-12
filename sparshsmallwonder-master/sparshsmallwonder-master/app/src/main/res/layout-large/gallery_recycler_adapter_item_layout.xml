@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/gallery_txt_Date"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/gallery_date_bg"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="3dp"
+        android:text="8/11/2015"
+        android:textColor="#f6273a4e"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/gallery_txt_Body"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/gallery_txt_Title"
+        android:layout_alignStart="@+id/gallery_txt_Title"
+        android:layout_below="@+id/gallery_txt_Title"
+        android:background="@drawable/gallery_list_item_body"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#222222"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gallery_txt_Title"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/gallery_title_bg_blue"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Students Gallery Ssection"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/gallery_ImageView"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_alignLeft="@+id/gallery_txt_Body"
+        android:layout_alignStart="@+id/gallery_txt_Body"
+        android:layout_below="@+id/gallery_txt_Title"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/gallery_image_bg"
+        android:padding="6dp"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/gallery_tag_field"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/textView28"
+        android:layout_toEndOf="@+id/textView28"
+        android:layout_toRightOf="@+id/textView28"
+        android:background="@drawable/gallery_fields_bg"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingEnd="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingStart="5dp"
+
+        android:text="Activities"
+        android:textColor="#ed3d73"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gallery_ImageView"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/textView28"
+        android:layout_toRightOf="@+id/textView28"
+        android:text="Photos"
+        android:textColor="#b77985"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/gallery_img_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView26"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_toLeftOf="@+id/textView26"
+        android:layout_toStartOf="@+id/textView26"
+        android:gravity="end"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:text="88"
+        android:textColor="#b77985"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gallery_ImageView"
+        android:layout_toEndOf="@+id/gallery_ImageView"
+        android:layout_toRightOf="@+id/gallery_ImageView"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:text="Category : "
+        android:textColor="#4e4e4e" />
+
+</RelativeLayout>

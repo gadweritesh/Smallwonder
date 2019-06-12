@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_Date"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/assign_filter_date_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="12 Aug 16"
+        android:textColor="#f6273a4e"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:id="@+id/view69"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txt_Date"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/notification_list_item_bg">
+
+        <ImageView
+            android:id="@+id/notification_tag_imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/notification_circle_bg"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txt_Body"
+            style="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/notification_tag_imageView"
+            android:layout_toRightOf="@+id/notification_tag_imageView"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Alert for Attendance"
+            android:textColor="#565656"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_Title"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_Body"
+            android:layout_alignStart="@+id/txt_Body"
+            android:layout_below="@+id/txt_Body"
+            android:paddingBottom="2dp"
+            android:paddingEnd="2dp"
+            android:paddingRight="2dp"
+            android:text="12 Aug 16" />
+
+        <TextView
+            android:id="@+id/submittedBy"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txt_Body"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Submitted by : "
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/txt_Submitted_By"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/submittedBy"
+            android:layout_toEndOf="@+id/submittedBy"
+            android:layout_toRightOf="@+id/submittedBy"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</RelativeLayout>

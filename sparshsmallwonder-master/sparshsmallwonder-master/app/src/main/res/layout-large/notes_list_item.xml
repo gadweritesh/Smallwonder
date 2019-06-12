@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <View
+            android:id="@+id/view42"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:id="@+id/view37"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/view41"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/view37"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/view37"
+            android:layout_alignTop="@+id/view37"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginStart="1dp" />
+
+        <TextView
+            android:id="@+id/notesTagTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view43"
+            android:layout_alignTop="@+id/view37"
+            android:gravity="center_vertical"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="10dp"
+            android:text="Feedback"
+            android:textColor="#404040"
+            android:textStyle="italic|bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view43"
+            android:layout_alignEnd="@+id/notesTagTextView"
+            android:layout_alignRight="@+id/notesTagTextView"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#8f8f8f" />
+
+        <TextView
+            android:id="@+id/notesPostDateTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view41"
+            android:layout_alignLeft="@+id/view41"
+            android:layout_alignStart="@+id/view41"
+            android:paddingBottom="3dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:text="10 Oct 7:15 AM"
+            android:textColor="#404040"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/notesStatusTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view41"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/view41"
+            android:paddingBottom="3dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="10dp"
+            android:paddingStart="3dp"
+            android:paddingTop="3dp"
+            android:text="Replied"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/concernedPersonTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view41"
+            android:layout_alignRight="@+id/view41"
+            android:layout_alignTop="@+id/view37"
+            android:layout_toEndOf="@+id/notesTagTextView"
+            android:layout_toRightOf="@+id/notesTagTextView"
+            android:ellipsize="end"
+            android:gravity="center_vertical|start"
+            android:maxLines="1"
+            android:paddingBottom="4dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="10dp"
+            android:paddingStart="4dp"
+            android:paddingTop="3dp"
+            android:text="Student Name"
+            android:textColor="#F06103"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view43"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/concernedPersonTextView"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#8f8f8f" />
+
+        <TextView
+            android:id="@+id/notesNoteTextView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/view41"
+            android:layout_alignLeft="@+id/view41"
+            android:layout_alignRight="@+id/view41"
+            android:layout_alignStart="@+id/view41"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView59"
+            android:layout_toRightOf="@+id/textView59"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="we need to meet class teacher we need to meet class teacher we need to meet class teacher we need to meet class teacher "
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

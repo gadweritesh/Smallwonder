@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/assignment_approve_linear"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/textView36"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="start|center_vertical"
+            android:paddingStart="10dp"
+            android:text="Roll No." />
+
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="start|center_vertical"
+            android:text="Student Name" />
+
+        <TextView
+            android:id="@+id/textView37"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Status" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/assignmentprroval_snack"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/assignment_approve_linear"
+        android:background="#000" />
+
+    <Button
+        android:onClick="ApproveAssignment"
+        android:id="@+id/assApproveSubmitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:text="Confirm and Submit" />
+
+    <ListView
+        android:id="@+id/assApproveListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/assApproveSubmitBtn"
+        android:layout_alignLeft="@+id/assApproveSubmitBtn"
+        android:layout_alignStart="@+id/assApproveSubmitBtn"
+        android:layout_below="@+id/assignment_approve_linear" />
+
+    <ProgressBar
+        android:id="@+id/assApproveProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

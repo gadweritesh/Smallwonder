@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Small Wonder Play School</string>
+    <string name="folderName">SmallWonder</string>
+    <string name="notification">Small Wonder Notification</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_password_que">Forgot Password ?</string>
+    <string name="password_too_short">Password Too short</string>
+    <string name="action_login">Log in</string>
+    <string name="action_get_password">Get Password</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="parent_zone">Parent Zone</string>
+    <string name="assignment">Homework</string>
+    <string name="admin_attendance">Attendance</string>
+    <string name="alert"> Alert</string>
+    <string name="attendance">Attendance</string>
+    <string name="admin_attendance_report">Absent Attendance Report </string>
+    <string name="admin_hostel_attendance_report">Hostel Attendance Report </string>
+    <!--<string name="admin_teacher_activity">Teacher Activity</string>-->
+    <string name="admin_teacher_activity">Active Login</string>
+    <string name="calendar">Calendar</string>
+    <string name="timetable">Time Table</string>
+    <string name="events">Events</string>
+    <string name="holidays">Holidays</string>
+    <string name="download">Download</string>
+
+    <string name="check_network">Check network connectivity.</string>
+    <string name="something_wrong">Something went wrong.</string>
+    <string name="bullet_2_spaces">"  • "</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="loading">Loading...</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="no_internet">No Internet Connection !</string>
+    <string name="noNotification"><b>No Notification</b></string>
+    <string name="noDataAvailable"><b><i>No Data Available</i></b></string>
+    <!--<string name="noDataAvailable">No Data Available</string>-->
+    <string name="company_desc"><![CDATA[\nOur aim is to deliver “Reliable and Economical” Products & Software Services enabling customer growth.]]></string>
+    <string name="company_desc2"><![CDATA[\nPlease visit us http://relecotech.com \nWrite to us  help@relecotech.com ]]></string>
+    <string name="fees_information_payment_history">Payment History</string>
+    <string name="bus_tracker">Bus Tracker</string>
+    <string name="video_gallery">Video Gallery</string>
+    <string name="profile">Profile</string>
+
+
+    <string-array name="role">
+        <item>Student</item>
+        <item>Teacher</item>
+        <item>Administrator</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+    </string-array>
+
+    <string-array name="bloodGroup">
+        <item>O−</item>
+        <item>O+</item>
+        <item>A−</item>
+        <item>A+</item>
+        <item>B−</item>
+        <item>B+</item>
+        <item>AB−</item>
+        <item>AB+</item>
+    </string-array>
+
+    <string-array name="achievementCategory">
+        <item>Academics</item>
+        <item>Sports</item>
+        <item>Extra-Curricular</item>
+    </string-array>
+
+    <string-array name="video_id_array">
+        <item>M5hHj1Lhxw0</item>
+        <item>HX6VHCWb8Uk</item>
+    </string-array>
+
+    <string-array name="video_title_array">
+        <item>Sparsh- Digital School Introduction</item>
+        <item>Releco HR One</item>
+    </string-array>
+
+    <string-array name="video_duration_array">
+        <item>01:52</item>
+        <item>01:21</item>
+    </string-array>
+
+    <string-array name="alertCategory">
+        <item>[ Category ]</item>
+        <item>Assignment</item>
+        <item>Attendance</item>
+        <item>Reports</item>
+        <item>Fees</item>
+        <item>Complaint</item>
+        <item>Student Unwell</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="division">
+        <item>A</item>
+        <item>B</item>
+        <item>All</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>Urgent</item>
+        <item>Normal</item>
+    </string-array>
+
+    <string-array name="classes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>All</item>
+    </string-array>
+    <string name="ads_unit">ca-app-pub-4696884248109648/5245588752</string>
+    <string name="channel_name">channel_id_x</string>
+
+</resources>
+
+
+
